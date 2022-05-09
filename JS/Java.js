@@ -54,3 +54,16 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+// navbar
+function changeBg(){
+    var navbar = document.getElementById('Background');
+    var scrollValue = window.scrollY;
+    if (scrollValue < 700){
+        navbar.classList.remove('bgColor')
+    }
+    else{
+        navbar.classList.add('bgColor')
+    }
+}
+window.addEventListener('scroll', changeBg);
+window.addEventListener('load', changeBg);

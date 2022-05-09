@@ -9,38 +9,56 @@
     <link rel="stylesheet" href="style/style.css">
     <title>BootStrap Exercise 2</title>
 </head>
-<body style="background: url(image/Purple.jpg) no-repeat; background-size: cover;">
+<body>
     <header >
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <nav id="Background" type="Background" class="navbar navbar-expand-lg bgColor navbar-dark fixed-top">
             <div class="container-fluid">
               <a><img id="Icon" class="img-fluid rounded-circle" width="70px" src="image/DigitalPortfolio.jpg" object="fit" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
+
               <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
                 <div class="navbar-nav lead">
-                  <a class="nav-link active p-5 bi bi-house-fill "href="#"> Home</a>
-                  <a class="nav-link active p-5 bi bi-file-person-fill" href="#"> About</a>
-                  <a class="nav-link active p-5 bi bi-telephone-fill" href="#"> Contact</a>
+                  <li class=""><a class="nav-link active p-5 bi bi-house-fill "href="#"> Home</a></li>
+                  <li><a class="nav-link active p-5 bi bi-file-person-fill" href="#"> About</a></li>
+                  <li id="pos-relative" class="nav-item dropdown ">
+                    <a class="nav-link active p-5 bi bi-telephone-fill" data-bs-toggle="dropdown" href="#"> Contact</a>
+                    <ul id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
                 </div>
               </div>
             </div>
           </nav>
+          <div class="social-icons">
+            <a class="social-icon" target="_blank" href="https://github.com/JasonWandrag"><i class="bi bi-github" aria-hidden="true"></i></a>
+            <a class="social-icon" target="_blank" href="https://codepen.io/Chryptolite"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+            <a class="social-icon" target="_blank" href="https://chryptolite.itch.io/"><i class="bi bi-envelope-fill" aria-hidden="true"></i></a>
+            <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/jason-wandrag-004b1512b/"><i class="bi bi-linkedin text-light" aria-hidden="true"></i></a>
+            <a href="mailto:jasonwandrag@gmail.com" class="social-icon"><i class="far fa-envelope" aria-hidden="true"></i></a>
+          </div>
     </header> 
-    <main style="height: 150vh;">
-    <div id="Box" class="lead d-flex justify-content-center align-items-center border-bottom border-top border-2 border-light ">
+    <main style="height: 200vh;">
+    <div  id="Box" class="lead d-flex justify-content-center align-items-center border-bottom border-top border-2 ">
         <section class="w-100">
         <div class="text-center">
-          <h2 id="Jared" class="lead display-1 text-light ">Jared Isaacs</h2>
+          <h1 id="Jared" class="jared lead display-1 ">Jared Isaacs</h1>
         <h1>
             <a id="Typewriter" href="" class="typewrite lead fs-2" style="text-decoration: none; text-align: center; color:rgb(170, 120, 218);" data-period="2000" data-type='[ "Web Developer", "Graphic-Designer", "App-Developer", "Freelancer" ]'>
               <span class="wrap"></span>
             </a>
           </h1>
+          <div style="margin-top:5%;">
+          <a id="AboutButton" href="#about">Find out more</a>
+        </div>
         </div>
         </section>
     </div>
-    <div class="container">
+    <div id="About" class="container my-5 bg-dark">
         <h2 class="display-2 text-center text-light">About</h2>
         <div class="row">
             <div class="col text-center"><img src="image/Jared (3).JPG" width="250px" alt=""></div>

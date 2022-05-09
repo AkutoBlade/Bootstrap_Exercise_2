@@ -1,28 +1,59 @@
+
+
 #Box{
     width: 100%;
     height:100vh;
     margin-left: 0;
     margin-right: 0;
     padding: 0;
-    background: linear-gradient(
+    background:
+    
+    linear-gradient(
         rgba(128, 14, 14, 0.8),
-        rgba(52, 10, 107, 0.8) 
-    );
+        rgba(52, 10, 107, 0.8)
+        
+    ),
+    url(/image/Purple.jpg) no-repeat center; 
+     
+    
+;
+background-size: cover;
+background-attachment: fixed;
 }
+
+
+/* navbar onchange */
+
+/* end */
+
 #navbarNavAltMarkup{
     margin-right: 5%;
     text-shadow: 0vw 0vw 3vw white;
 }
-@media(min-width:2260px){
+@media(min-width:2260px) and (min-width:923px){
     #navbarNavAltMarkup{
         margin-right: 4%;
     }
 }
 
-#Jared{
-    text-shadow: 0vw 0vw 1vw white;
+@media (min-width:923px) and {
+    #Background{
+        border-bottom: 2px solid white;
+    }
 }
- #Icon{
+    
+}
+
+[class *="jared"] {
+    text-shadow: 1px 1px 2px blue;
+    color: green;
+    font-size: larger;
+}
+/* #Box section >text-center #Jareds{
+    text-shadow: 
+    color: white;
+} */
+#Icon{
      box-shadow: 0vw 0vw 1vw white;
      transition: 5s;
  }
@@ -34,3 +65,64 @@
  #Typewriter{
      text-shadow: 0vw 0vw 1vw rgb(170, 120, 218);;
  }
+
+ #About{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+ }
+
+ .bgColor{
+     transition: 10s;
+    background: linear-gradient(
+        rgba(128, 14, 14, 0.8),
+        rgba(52, 10, 107, 0.8) 
+    );
+    border-bottom: 1px solid white;
+ }
+
+ #dropdown-menu {
+     top: 60%;
+     left: 5%;
+     margin-left: 1.5rem;
+ }
+ .social-icons {
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+    position: fixed;
+    z-index: 20;
+    right: 3%;
+    bottom: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size:x-large;
+    padding: 10px;
+}
+ .bi{
+     color: white;
+     text-shadow: 0vw 0vw 1vw white;
+ }
+.bi:hover{
+color: black;
+text-shadow: 0vw 0vw 1vw black;
+transition: .8s;
+}
+
+#AboutButton {
+    text-decoration: none;
+    color: white;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 20px;
+    width: fit-content;
+    transition: all 0.3s linear;
+    box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+}
