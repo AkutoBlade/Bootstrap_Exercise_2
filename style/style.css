@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 
 #Box{
     width: 100%;
@@ -28,7 +28,8 @@ background-attachment: fixed;
 
 #navbarNavAltMarkup{
     margin-right: 5%;
-    text-shadow: 0vw 0vw 3vw white;
+    text-shadow: 0vw 0vw 1vw white;
+
 }
 @media(min-width:2260px) and (min-width:923px){
     #navbarNavAltMarkup{
@@ -42,12 +43,10 @@ background-attachment: fixed;
     }
 }
     
-}
 
-[class *="jared"] {
-    text-shadow: 1px 1px 2px blue;
-    color: green;
-    font-size: larger;
+#Jared {
+    text-shadow: 0vw 0vw 1vw white;
+    font-family: 'Share Tech', sans-serif;
 }
 /* #Box section >text-center #Jareds{
     text-shadow: 
@@ -68,14 +67,14 @@ background-attachment: fixed;
 
  #About{
     background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 0vw 0vw 1vw  rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
  }
 
  .bgColor{
-     transition: 10s;
+     transition: 5s;
     background: linear-gradient(
         rgba(128, 14, 14, 0.8),
         rgba(52, 10, 107, 0.8) 
@@ -105,6 +104,7 @@ background-attachment: fixed;
     gap: 20px;
     font-size:x-large;
     padding: 10px;
+    box-shadow: 0vw 0vw 1vw white;
 }
  .bi{
      color: white;
@@ -119,10 +119,76 @@ transition: .8s;
 #AboutButton {
     text-decoration: none;
     color: white;
-    border: 1px solid;
     padding: 10px;
     border-radius: 20px;
     width: fit-content;
     transition: all 0.3s linear;
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+    box-shadow: 0vw 0vw 1vw white;
+    background-color: white;
+    color: black;
+}
+
+.height{
+    height:10%;
+}
+#Title{
+font-family: 'Share Tech', sans-serif;
+}
+
+#Profile{
+    box-shadow: 0vw 0vw 1vw white; ;
+}
+
+#Info{
+    padding: 10px;
+    box-shadow: 0vw 0vw 1vw white;
+}
+
+
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .mask .fill {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #227DED;
+  }
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+  .mask.full,
+  .circle .fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(135deg);
+  }
+  @keyframes fill{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(135deg);
+    }
+  }
+  .circle-wrap .inside-circle {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background: #D2EAF1;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: 14px;
+  color: #1E51DC;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.circle-wrap{
+    margin-bottom: 24%;
 }

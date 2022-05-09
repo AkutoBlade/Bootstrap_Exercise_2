@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous' defer></script>
     <link rel="stylesheet" href="style/style.css">
     <title>BootStrap Exercise 2</title>
 </head>
-<body>
+<body class="bg-dark">
     <header >
         <nav id="Background" type="Background" class="navbar navbar-expand-lg bgColor navbar-dark fixed-top">
             <div class="container-fluid">
-              <a><img id="Icon" class="img-fluid rounded-circle" width="70px" src="image/DigitalPortfolio.jpg" object="fit" alt=""></a>
+              <a><img id="Icon" class="img-fluid rounded-circle" data-aos="zoom-out" data-aos-delay="1000" width="70px" src="image/DigitalPortfolio.jpg" object="fit" alt=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -39,16 +41,15 @@
             <a class="social-icon" target="_blank" href="https://codepen.io/Chryptolite"><i class="bi bi-facebook" aria-hidden="true"></i></a>
             <a class="social-icon" target="_blank" href="https://chryptolite.itch.io/"><i class="bi bi-envelope-fill" aria-hidden="true"></i></a>
             <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/jason-wandrag-004b1512b/"><i class="bi bi-linkedin text-light" aria-hidden="true"></i></a>
-            <a href="mailto:jasonwandrag@gmail.com" class="social-icon"><i class="far fa-envelope" aria-hidden="true"></i></a>
           </div>
     </header> 
     <main style="height: 200vh;">
-    <div  id="Box" class="lead d-flex justify-content-center align-items-center border-bottom border-top border-2 ">
+    <div  id="Box" class="lead d-flex justify-content-center align-items-center ">
         <section class="w-100">
         <div class="text-center">
-          <h1 id="Jared" class="jared lead display-1 ">Jared Isaacs</h1>
+          <h1 id="Jared" class="lead display-1 text-light " data-aos="fade-right"  data-aos-delay="1000">Jared Isaacs</h1>
         <h1>
-            <a id="Typewriter" href="" class="typewrite lead fs-2" style="text-decoration: none; text-align: center; color:rgb(170, 120, 218);" data-period="2000" data-type='[ "Web Developer", "Graphic-Designer", "App-Developer", "Freelancer" ]'>
+            <a id="Typewriter" href="" data-aos="fade-left"  data-aos-delay="1000" class="typewrite lead fs-2" style="text-decoration: none; text-align: center; color:rgb(170, 120, 218);" data-period="2000" data-type='[ "Web Developer", "Graphic-Designer", "App-Developer", "Freelancer" ]'>
               <span class="wrap"></span>
             </a>
           </h1>
@@ -58,56 +59,42 @@
         </div>
         </section>
     </div>
-    <div id="About" class="container my-5 bg-dark">
-        <h2 class="display-2 text-center text-light">About</h2>
-        <div class="row">
-            <div class="col text-center"><img src="image/Jared (3).JPG" width="250px" alt=""></div>
-            <div class="col">
-                <table class="table table-dark table-borderless">
-                    <tbody class="justify-content-start">
-                      <tr>
-                        <td>Name</td>
-                        <td>:</td>
-                        <td class="w-25">Jared</td>
-                      </tr>
-                      <tr>
-                        <td>Surname</td>
-                        <td class="w-25">:</td>
-                        <td>Isaacs</td>
-                      </tr>
-                      <tr>
-                        <td class="w-25">Age</td>
-                        <td>:</td>
-                        <td>18</td>
-                      </tr>
-                      <tr>
-                        <td>DOB</td>
-                        <td>:</td>
-                        <td>22/03/2004</td>
-                      </tr>
-                      <tr>
-                        <td>Contact</td>
-                        <td>:</td>
-                        <td>0720515069</td>
-                      </tr>
-                      <tr>
-                        <td class="w-25">Hobbies</td>
-                        <td>:</td>
-                        <td style="list-style: none;">
-                          <li>Chess</li> 
-                          <li>Reading Manga</li>
-                          <li>Watching Anime</li>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+    <div class="container-fluid  bg-dark">
+    <section class="height bg-dark"> 
+    </section>
+    <div id="About" class="container my-5 bg-dark" data-aos="fade-right">
+        <h2 id="Title" class="display-2  text-light">About</h2>
+        <div class="row h-75">
+            <div class="col d-flex" data-aos="fade-right">
+              <div class=" align-self-end  circle-wrap">
+                <div class="circle">
+                 <div class="mask half">
+                     <div class="fill"></div>
+                 </div>
+                 <div class="mask full">
+                     <div class="fill"></div>
+                  </div>
+                 <div class="inside-circle"> 75% </div>
+             </div>
+           </div>
+              <p id="Info" class="text-light align-self-center rounded-3">
+              Jared Isaacs is a part-time web-developer, app developer and a pinch of graphic designer, since not only does he create them, but design the layout and graphics for them, which gives it that final touch.
+              His passionate about software development, thus large projects gives him the ways and means of learning new methods of coding, new coding techniques and most of all feeds the spermologist within him.
+               </p>
+        
             </div>
-        </div>
+            <div class="col text-center" style=" height:500px"  data-aos="fade-left"><img id="Profile" style="height:400px;" class=" img-fluid rounded-2" src="image/Jared (3).JPG" width="300px" alt=""></div>
+        </div> 
     </div>
     </main>
+  </div>
      <footer>
 
      </footer>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
     <script src="JS/Java.js"></script>
 </body>
