@@ -1,101 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous' defer></script>
-    <link rel="stylesheet" href="style/style.css">
-    <title>BootStrap Exercise 2</title>
-</head>
-<body class="bg-dark">
-    <header >
-        <nav id="Background" type="Background" class="navbar navbar-expand-lg bgColor navbar-dark fixed-top">
-            <div class="container-fluid">
-              <a><img id="Icon" class="img-fluid rounded-circle" data-aos="zoom-out" data-aos-delay="1000" width="70px" src="image/DigitalPortfolio.jpg" object="fit" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
 
-              <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
-                <div class="navbar-nav lead">
-                  <li class=""><a class="nav-link active p-5 bi bi-house-fill "href="#"> Home</a></li>
-                  <li><a class="nav-link active p-5 bi bi-file-person-fill" href="#"> About</a></li>
-                  <li id="pos-relative" class="nav-item dropdown ">
-                    <a class="nav-link active p-5 bi bi-telephone-fill" data-bs-toggle="dropdown" href="#"> Contact</a>
-                    <ul id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                </div>
-              </div>
-            </div>
-          </nav>
-          <div class="social-icons">
-            <a class="social-icon" target="_blank" href="https://github.com/JasonWandrag"><i class="bi bi-github" aria-hidden="true"></i></a>
-            <a class="social-icon" target="_blank" href="https://codepen.io/Chryptolite"><i class="bi bi-facebook" aria-hidden="true"></i></a>
-            <a class="social-icon" target="_blank" href="https://chryptolite.itch.io/"><i class="bi bi-envelope-fill" aria-hidden="true"></i></a>
-            <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/jason-wandrag-004b1512b/"><i class="bi bi-linkedin text-light" aria-hidden="true"></i></a>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous' defer></script>
+  <link rel="stylesheet" href="style/Work.css">
+  <link rel="stylesheet" href="style/style.css">
+  <title>BootStrap Exercise 2</title>
+</head>
+
+<body class="bg-dark">
+  <header>
+    <nav id="Background" type="Background" class="navbar navbar-expand-lg bgColor navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a><img id="Icon" class="img-fluid rounded-circle" data-aos="zoom-out" data-aos-delay="1000" width="70px"
+            src="image/DigitalPortfolio.jpg" object="fit" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
+          <div class="navbar-nav lead">
+            <li class=""><a class="nav-link active p-5 bi bi-house-fill " href="#"> Home</a></li>
+            <li><a class="nav-link active p-5 bi bi-file-person-fill" href="#Title"> About</a></li>
+            <li id="pos-relative" class="nav-item dropdown ">
+              <a class="nav-link active p-5 bi bi-telephone-fill" data-bs-toggle="dropdown" href="#"> Contact</a>
+              <ul id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
           </div>
-    </header> 
-    <main style="height: 200vh;">
-    <div  id="Box" class="lead d-flex justify-content-center align-items-center ">
-        <section class="w-100">
+        </div>
+      </div>
+    </nav>
+    <div class="social-icons">
+      <a class="social-icon" target="_blank" href="https://github.com/JasonWandrag"><i class="bi bi-github"
+          aria-hidden="true"></i></a>
+      <a class="social-icon" target="_blank" href="https://codepen.io/Chryptolite"><i class="bi bi-facebook"
+          aria-hidden="true"></i></a>
+      <a class="social-icon" target="_blank" href="https://chryptolite.itch.io/"><i class="bi bi-envelope-fill"
+          aria-hidden="true"></i></a>
+      <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/jason-wandrag-004b1512b/"><i
+          class="bi bi-linkedin text-light" aria-hidden="true"></i></a>
+    </div>
+  </header>
+  <!-- Landing Page -->
+  <main style="min-height: 100vh">
+    <div id="Box" class="lead d-flex justify-content-center align-items-center ">
+      <section class="w-100">
         <div class="text-center">
-          <h1 id="Jared" class="lead display-1 text-light " data-aos="fade-right"  data-aos-delay="1000">Jared Isaacs</h1>
-        <h1>
-            <a id="Typewriter" href="" data-aos="fade-left"  data-aos-delay="1000" class="typewrite lead fs-2" style="text-decoration: none; text-align: center; color:rgb(170, 120, 218);" data-period="2000" data-type='[ "Web Developer", "Graphic-Designer", "App-Developer", "Freelancer" ]'>
+          <h1 id="Jared" class="lead display-1 text-light" data-aos="fade-right" data-aos-duration="5000" data-aos-delay="500">Jared Isaacs
+          </h1>
+          <h1>
+            <a id="Typewriter" href="" data-aos="fade-left" data-aos-delay="1000" class="typewrite lead fs-2"
+              style="text-decoration: none; text-align: center; color:rgb(170, 120, 218);" data-period="2000"
+              data-type='[ "Web Developer", "Graphic-Designer", "App-Developer", "Freelancer" ]'>
               <span class="wrap"></span>
             </a>
           </h1>
           <div style="margin-top:5%;">
-          <a id="AboutButton" href="#about">Find out more</a>
+            <a id="AboutButton" href="#Title">Find out more</a>
+          </div>
         </div>
-        </div>
-        </section>
     </div>
-    <div class="container-fluid  bg-dark">
-    <section class="height bg-dark"> 
+    <!-- Section1 -->
+    <section style="height:200px" class=" bg-dark">
     </section>
-    <div id="About" class="container my-5 bg-dark" data-aos="fade-right">
-        <h2 id="Title" class="display-2  text-light">About</h2>
-        <div class="row h-75">
-            <div class="col d-flex" data-aos="fade-right">
-              <div class=" align-self-end  circle-wrap">
-                <div class="circle">
-                 <div class="mask half">
-                     <div class="fill"></div>
-                 </div>
-                 <div class="mask full">
-                     <div class="fill"></div>
-                  </div>
-                 <div class="inside-circle"> 75% </div>
-             </div>
-           </div>
-              <p id="Info" class="text-light align-self-center rounded-3">
-              Jared Isaacs is a part-time web-developer, app developer and a pinch of graphic designer, since not only does he create them, but design the layout and graphics for them, which gives it that final touch.
-              His passionate about software development, thus large projects gives him the ways and means of learning new methods of coding, new coding techniques and most of all feeds the spermologist within him.
-               </p>
-        
+    <div  id="Box2" class="container-fluid bg-dark d-flex align-items-center">
+      <div id="About" class="container my-5 bg-dark" data-aos="fade-right">
+        <h2 id="Title" class="display-2 d-flex justify-content-center text-light" data-aos="zoom-out" data-aos-duration="4000"
+        data-aos-delay="500">About</h2>
+        <div id="ContentRow" class="row">
+          <div class="col-md-6 text-center border-2 text-light" style=" height:500px" data-aos="fade-left"><img
+              id="Profile" style="height:400px;" class=" img-fluid rounded-2" src="image/Jared (3).JPG" width="300px"
+              alt=""></div>
+          <div class="col-md-6 align-self-center ps-0" data-aos="fade-right">
+            <p id="Info" class="text-light text-center align-self-center rounded-3">
+              Jared Isaacs is a part-time web-developer, app developer and a pinch of graphic designer, since not only
+              does he create them, but design the layout and graphics for them, which gives it that final touch.
+              His passionate about software development, thus large projects gives him the ways and means of learning
+              new methods of coding, new coding techniques and most of all feeds the spermologist within him.
+            </p>
+            <br>
+            <div class="row text-light">
+              <div class="col">Name</div>
+              <div class="col">:</div>
+              <div class="col">Jared</div>
             </div>
-            <div class="col text-center" style=" height:500px"  data-aos="fade-left"><img id="Profile" style="height:400px;" class=" img-fluid rounded-2" src="image/Jared (3).JPG" width="300px" alt=""></div>
-        </div> 
-    </div>
-    </main>
-  </div>
-     <footer>
+            <div class="row text-light">
+              <div class="col">Surname</div>
+              <div class="col">:</div>
+              <div class="col">Isaacs</div>
+            </div>
+            <div class="row text-light">
+              <div class="col">Age</div>
+              <div class="col">:</div>
+              <div class="col">18</div>
+            </div>
+            <div class="row text-light">
+              <div class="col">Contact</div>
+              <div class="col">:</div>
+              <div class="col">0720515069</div>
+            </div>
+            <div class="row text-light">
+              <div class="col">Account</div>
+              <div class="col">:</div>
+              <div class="col">rared.isaacs@gmail.com</div>
+            </div>
+          </div>
 
-     </footer>
-     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-     <script>
-      AOS.init();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
-    <script src="JS/Java.js"></script>
+        </div>
+
+      </div>
+
+    </div>
+
+    <section class="bg-dark" style="height:200px" ></section>
+
+    <!-- Work section -->
+    <div id="Box3" class="container-fluid bg-dark d-flex align-items-center justify-content-center" >
+      <!-- <div id="Work" class="container"></div> -->
+      <section id="history" class=" container rounded-2">
+        <h2 id="HeadingWork" class="section-heading display-2 text-light text-center">Work And Education</h2>
+        <div class="timeline" id="timeline">
+          <div class="line"></div>
+        
+  <div class="timeline-section bg-dark timeline-right aos-init aos-animate" data-aos="fade-right">
+      <p class="timeline-header bg-black rounded-2">2020 - Present</p>
+      <div class="timeline-content">
+        <h4 class="timeline-title">Life Choices - <span class="timeline-role">Lecturer / Fullstack Developer</span></h4>
+        <p class="timeline-description">An NPO focused on challenging inequality by investing in youth. My job was focused around training youth and helping them find sustainable jobs</p>
+        <h6 class="timeline-heading">My Accomplishments:</h6>
+        <ul>
+        <li>I helped create and maintain the Fullstack Developer Course content</li><li>Deliver course content in 6 month cycles</li><li>Helped over 200 young and budding developers learn core programming skills and create online portfolios</li><li>Assisted in the development of LC Studio, a company designed to give work experience to intern developers</li>
+        </ul>
+        <!-- <button class="form-submit" onclick="toggleReferenceModal(0)">Reference</button> -->
+      </div>
+      <!-- <div timeline-modal="0" class="timeline-modal">
+          <p class="timeline-header">Reference</p><p>
+          </p><div class="timeline-content">
+            <h4 class="timeline-title">Godwin Dzvapatsva - <span class="timeline-role">Head of Curriculum</span></h4>
+            <p class="timeline-description">071 248 2443</p>
+          </div>
+          <button class="timeline-modal-button" onclick="toggleReferenceModal(0)">x</button>
+      </div> -->
+  </div>
+
+  <div class="timeline-section bg-dark aos-init aos-animate" data-aos="fade-left">
+      <p class="timeline-header bg-black rounded-2">2019</p>
+      <div class="timeline-content">
+        <h4 class="timeline-title">NuDynamics - <span class="timeline-role">Frontend Developer</span></h4>
+        <p class="timeline-description">A small startup focused on creating the web applications for a large tourism company</p>
+        <h6 class="timeline-heading">My Accomplishments:</h6>
+        <ul>
+        <li>Learnt how to create applications in React</li><li>Created the frontend UI for the MTO Group website</li>
+        </ul>
+        <!-- <button class="timeline-btn form-submit" onclick="toggleReferenceModal(1)">Reference</button> -->
+      </div>
+      <!-- <div timeline-modal="1" class="timeline-modal">
+          <p class="timeline-header">Reference</p><p>
+          </p><div class="timeline-content">
+            <h4 class="timeline-title">Elrico Heinen - <span class="timeline-role">CEO</span></h4>
+            <p class="timeline-description">083 256 1718</p>
+          </div>
+          <button class="timeline-modal-button" onclick="toggleReferenceModal(1)">x</button>
+      </div> -->
+  </div>
+
+  <div class="timeline-section bg-dark timeline-right aos-init aos-animate" data-aos="fade-right">
+      <p class="timeline-header bg-black rounded-2">2018</p>
+      <div class="timeline-content">
+        <h4 class="timeline-title">Braxton - <span class="timeline-role">Frontend Developer</span></h4>
+        <p class="timeline-description">A dedicated development house with a few in house products</p>
+        <h6 class="timeline-heading">My Accomplishments:</h6>
+        <ul>
+        <li>Took the Angular Tour of Heroes</li><li>Contributed to projects by creating reuseable components</li>
+        </ul>
+        <!-- <button class="timeline-btn form-submit" onclick="toggleReferenceModal(2)">Reference</button> -->
+      </div>
+      <!-- <div timeline-modal="2" class="timeline-modal">
+          <p class="timeline-header">Reference</p><p>
+          </p><div class="timeline-content">
+            <h4 class="timeline-title">Andro Treurnicht - <span class="timeline-role">Project Lead</span></h4>
+            <p class="timeline-description">083 308 5234</p>
+          </div>
+          <button class="timeline-modal-button" onclick="toggleReferenceModal(2)">x</button>
+      </div> -->
+  </div>
+
+  <div class="timeline-section bg-dark timeline-left aos-init" data-aos="fade-left">
+      <p class="timeline-header bg-black rounded-2">2016-2017</p>
+      <div class="timeline-content">
+        <h4 class="timeline-title">JNZ Group - <span class="timeline-role">Designer / Developer</span></h4>
+        <p class="timeline-description">An end-to-end business IT services provider</p>
+        <h6 class="timeline-heading">My Accomplishments:</h6>
+        <ul>
+        <li>Helped various local businesses with branding</li><li>Created website mockups according to client needs</li><li>Develop websites and ecommerce stores with the appropriate web tools</li><li>Gathered resources that have since made my development career an absolute breeze</li>
+        </ul>
+        <!-- <button class="timeline-btn form-submit" onclick="toggleReferenceModal(3)">Reference</button> -->
+      </div>
+      <!-- <div timeline-modal="3" class="timeline-modal">
+          <p class="timeline-header">Reference</p><p>
+          </p><div class="timeline-content">
+            <h4 class="timeline-title">Kim North - <span class="timeline-role">Managing Director</span></h4>
+            <p class="timeline-description">072 081 6226</p>
+          </div>
+          <button class="timeline-modal-button" onclick="toggleReferenceModal(3)">x</button>
+      </div> -->
+  </div>
+</div>
+      </section>
+    </div>
+  
+  </main>
+  </div>
+  <footer>
+
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="JS/Java.js"></script>
 </body>
+
 </html>
