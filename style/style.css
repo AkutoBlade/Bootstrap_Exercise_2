@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 
+::-webkit-scrollbar{
+    width: 10px;
+
+   }
+   ::-webkit-scrollbar-track{
+    background:#212529;
+   }
+
+::-webkit-scrollbar-thumb{
+ background: #4d1249;
+}
+
 #Box{
     width: 100%;
     height:100vh;
@@ -25,6 +37,7 @@ background-attachment: fixed;
 
 #Box2{
     width: 100%;
+    height: 1000px;
     margin-left: 0;
     margin-right: 0;
     padding: 0;
@@ -45,7 +58,7 @@ background-attachment: fixed;
 
 #Box3{
     width: 100%;
-    height: 2386.4px;
+    height: 2390.4px;
     margin-left: 0;
     margin-right: 0;
     padding: 0;
@@ -64,6 +77,27 @@ background-size: cover;
 background-attachment: fixed;
 }
 
+#Box4{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    background:
+    
+    linear-gradient(
+        rgba(128, 14, 14, 0.8),
+        rgba(52, 10, 107, 0.8)
+        
+    ),
+    url(/image/Purple.jpg) no-repeat center; 
+     
+    
+;
+background-size: cover;
+background-attachment: fixed;
+}
 
 /* navbar onchange */
 
@@ -234,7 +268,7 @@ font-family: 'Share Tech', sans-serif;
 }
 
 
- @media(max-width:320px){
+ @media(max-width:1120px){
     #Profile{
         width: 250px;
     }
@@ -263,6 +297,17 @@ font-family: 'Share Tech', sans-serif;
     *{
         overflow-x: hidden;
     }
+
+    #Box2, #Box3{
+        overflow-y: hidden;
+    }
+    #Box3{
+        height: 2500.4px;
+    }
+
+    #Box2{
+        height: 1500px;
+    }
 }
 
 
@@ -281,3 +326,60 @@ font-family: 'Share Tech', sans-serif;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     height: 596.4px;  
 }
+
+.ProjectImage{
+    height: 500px;
+    width: 1200px;
+}
+
+.ContainerImage:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background:rgba(52, 10, 107, 0.8);
+}
+.carousel-item{
+    position: relative;
+}
+
+.carousel-caption{
+    width: 100%;
+    height: 100%;
+    left: 0%;
+}
+
+.Ctext{
+    font-size: 30px;
+    text-shadow: 0vw 0vw 1vw white;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: start;
+    font-weight: bold;
+    width:720px;
+}
+
+.Button{
+    z-index: 50;
+    position:absolute !important;
+}
+
+.carousel-indicators{
+    margin-top: 10%;
+}
+
+.Button #Left {
+    left: 0;
+    height: 5em;
+}
+
+.Button #Right {
+    right: 0;
+}
+
+
