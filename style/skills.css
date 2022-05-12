@@ -1,0 +1,60 @@
+#skills {
+margin-top: 10%;
+  backdrop-filter: blur( 4px );
+  background-color:  rgba( 255, 255, 255, 0.25 );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0vw 0vw 1vw  rgba( 31, 38, 135, 0.37 );
+
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%
+}
+.skills-image {
+  font-size: 4em;
+  height: 80px;
+  width:500px;
+  flex-grow: 1;
+  /* object-fit: contain; */
+  padding: 5px;
+   /* Firefox 3.5+ */
+ /* IE6-9 *//* Chrome 19+ & Safari 6+ */
+
+  transition: 0.4s linear;
+  color:white;
+  text-shadow: 0vw 0vw 1vw white;
+  margin: 10px;
+  backdrop-filter: blur( 4px );
+  background-color:  rgba( 255, 255, 255, 0.25 );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+}
+.skills-image:hover {
+  color: #4d1249;
+  background-color:#212529 ;
+  text-shadow: 0vw 0vw 1vw #4d1249;
+}
+
+
+.text-center{
+    justify-self: flex-start;
+}r
+#Html{
+    margin-top:50%;
+}
+
+#SkillTitle{
+    margin-top: 3%;
+    font-family: 'Share Tech', sans-serif;
+    text-decoration: underline;
+    text-decoration-color:rgba(52, 10, 107, 0.8) ;
+    text-shadow: 0vw 0vw 1vw white;
+}
+
+#Title, #HeadingWork, #SkillTitle{
+    scroll-margin-block-start: 140px;
+}

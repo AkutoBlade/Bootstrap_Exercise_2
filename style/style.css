@@ -78,9 +78,30 @@ background-attachment: fixed;
 }
 
 #Box4{
-    position: relative;
     width: 100%;
     height: 1000px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    background:
+    
+    linear-gradient(
+        rgba(128, 14, 14, 0.8),
+        rgba(52, 10, 107, 0.8)
+        
+    ),
+    url(/image/Purple.jpg) no-repeat center; 
+     
+    
+;
+background-size: cover;
+background-attachment: fixed;
+}
+
+#Box5{
+    position:
+    width: 100%;
+    height: 750px;
     margin-left: 0;
     margin-right: 0;
     padding: 0;
@@ -308,6 +329,7 @@ font-family: 'Share Tech', sans-serif;
     #Box2{
         height: 1500px;
     }
+    
 }
 
 
@@ -340,9 +362,7 @@ font-family: 'Share Tech', sans-serif;
     height:100%;
     background:rgba(52, 10, 107, 0.8);
 }
-.carousel-item{
-    position: relative;
-}
+
 
 .carousel-caption{
     width: 100%;
@@ -350,9 +370,26 @@ font-family: 'Share Tech', sans-serif;
     left: 0%;
 }
 
+#Box4{
+    position: relative;
+}
+
+.carousel-control-prev-icon{
+    position: absolute;
+    left: 0;
+    z-index: 150;
+}
+
+.carousel-control-next-icon{
+    position: absolute;
+    right: 0;
+    z-index: 150;
+}
+
 .Ctext{
     font-size: 30px;
     text-shadow: 0vw 0vw 1vw white;
+    color: black;
     position: absolute;
     top: 40%;
     left: 40%;
@@ -361,25 +398,50 @@ font-family: 'Share Tech', sans-serif;
     transform: translate(-50%, -50%);
     text-align: start;
     font-weight: bold;
-    width:720px;
 }
 
 .Button{
     z-index: 50;
-    position:absolute !important;
 }
 
 .carousel-indicators{
     margin-top: 10%;
 }
 
-.Button #Left {
-    left: 0;
-    height: 5em;
+#wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.containers{
+    width: 200px;
+    height: 400px;
+    border-radius: 5%;
+    margin: 20px auto;
+  }
+#card{
+ width: 200px;
+ height: 400px;
+ position: relative;
+ transition: transform 1s;
+ transform-style: preserve-3d;
+ background-color: aliceblue;
 }
 
-.Button #Right {
-    right: 0;
+.containers:hover #card{
+    transform: rotateY(180deg);
+  }
+#Front, #Back{
+position: absolute;
+width: 200px;
+height: 400px;
+border-radius: 2%;
+backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+}
+#Back{
+transform: rotateY(180deg);
+background-color: #4d1249;
 }
 
 
