@@ -63,7 +63,7 @@ background-attachment: fixed;
 
 #Box3{
     width: 100%;
-    height: 2390.4px;
+    height: 1300.4px;
     margin-left: 0;
     margin-right: 0;
     padding: 0;
@@ -84,7 +84,7 @@ background-attachment: fixed;
 
 #Box4{
     width: 100%;
-    height: 1000px;
+    height: 800px;
     margin-left: 0;
     margin-right: 0;
     padding: 0;
@@ -104,7 +104,27 @@ background-attachment: fixed;
 }
 
 #Box5{
-    position:
+    width: 100%;
+    height: 750px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    background:
+    
+    linear-gradient(
+        rgba(128, 14, 14, 0.8),
+        rgba(52, 10, 107, 0.8)
+        
+    ),
+    url(/image/Purple.jpg) no-repeat center; 
+     
+    
+;
+background-size: cover;
+background-attachment: fixed;
+}
+
+#Box6{
     width: 100%;
     height: 750px;
     margin-left: 0;
@@ -209,10 +229,16 @@ background-attachment: fixed;
      color: white;
      text-shadow: 0vw 0vw 1vw white;
  }
-.bi:hover{
-color: black;
-text-shadow: 0vw 0vw 1vw black;
+.bi.bi-facebook:hover, .bi.bi-linkedin:hover{
+color: 	#4267B2;
+text-shadow: 0vw 0vw 1vw #4267B2;
 transition: .8s;
+}
+
+.bi.bi-github:hover{
+    color:black;
+    text-shadow: 0vw 0vw 1vw black ;
+    transition: .8s;
 }
 
 #AboutButton {
@@ -318,22 +344,31 @@ font-family: 'Share Tech', sans-serif;
     }
     .nav{
         position: absolute;
+        overflow-x: hidden;
         left: 0;
     }
-    *{
+   footer, header,section ,#Box1,#Box2,#Box3,#Box4{
         overflow-x: hidden;
     }
-
-    #Box2, #Box3{
-        overflow-y: hidden;
-    }
     #Box3{
-        height: 2500.4px;
+        height: 1400.4px; 
     }
 
     #Box2{
         height: 1500px;
     }
+
+  #Box6{
+      height:2000px;
+  } 
+  
+  .skills-image{
+      width: 300px;
+  }
+
+   .carousel-inner{
+       width:500px; 
+   }
     
 }
 
@@ -365,7 +400,8 @@ font-family: 'Share Tech', sans-serif;
     position: absolute;
     width: 100%;
     height:100%;
-    background:rgba(52, 10, 107, 0.8);
+    background: linear-gradient( rgba(128, 14, 14, 0.8),
+    rgba(52, 10, 107, 0.8) )
 }
 
 
@@ -382,6 +418,7 @@ font-family: 'Share Tech', sans-serif;
 .carousel-control-prev-icon{
     position: absolute;
     left: 0;
+    
     z-index: 150;
 }
 
@@ -391,9 +428,25 @@ font-family: 'Share Tech', sans-serif;
     z-index: 150;
 }
 
+@media(max-width:426px){
+    .carousel-control-prev-icon{
+        position: absolute;
+        left: 40px;
+        z-index: 150;
+    } 
+.carousel-caption{
+    display: block;
+}
+    .carousel-control-next-icon{
+        position: absolute;
+        right: 40px;
+        z-index: 150;
+    }
+}
+
+
 .Ctext{
     font-size: 30px;
-    text-shadow: 0vw 0vw 1vw white;
     color: black;
     position: absolute;
     top: 40%;
@@ -414,8 +467,8 @@ font-family: 'Share Tech', sans-serif;
 }
  /* Testimonials */
 #wrapper{
-    display: flex;
     align-items: center;
+    margin-right: 100px;
 }
 .containers{
     width: 200px;
@@ -450,4 +503,53 @@ transform: rotateY(180deg);
 background-color: #4d1249;
 }
 
+#Testimonials{
+    font-family: 'Share Tech', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: rgba(52, 10, 107, 0.8) ;
+    text-shadow: 0vw 0vw 1vw white  ;
+}
 
+#Contact{
+    font-family: 'Share Tech', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: rgba(52, 10, 107, 0.8) ;
+    text-shadow: 0vw 0vw 1vw white  ;
+}  
+
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 17px 30px 7px;
+    height: 75px;
+}
+
+.fa-brands{
+    color: white;
+    text-shadow: 0vw 0vw 1vw white;
+}
+
+.fa-brands:hover{
+    color:black;
+    text-shadow: 0vw 0vw 1vw black;
+}
+#Projects{
+font-family: 'Share Tech', sans-serif;
+text-decoration: underline;
+text-decoration-color: rgba(52, 10, 107, 0.8) ;
+text-shadow: 0vw 0vw 1vw white  ;
+}
+
+.Head{
+    font-family: 'Share Tech', sans-serif;
+    text-shadow: 0vw 0vw 1vw white;
+}
+
+.sub-heading{
+    text-decoration: underline;
+}
+
+.carousel-inner{
+ height: 500px; 
+}

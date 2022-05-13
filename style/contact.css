@@ -7,9 +7,9 @@
   #contact-form {
     display: flex;
     flex-direction: column;
-    background-color: var(--blueGray4);
-    width: 100%;
-    padding: 2%;
+    background-color:#212529;
+    width: 80%;
+    padding: 2%; 
     border-radius: 20px;
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
   }
@@ -17,7 +17,7 @@
   .form-submit {
     border: none;
     outline: none;
-    background-color: var(--blueGray6);
+    background-color: #292933;
     border-radius: 40px;
     padding: 2%;
     margin-bottom: 20px;
