@@ -55,6 +55,6 @@ margin-top: 10%;
     text-shadow: 0vw 0vw 1vw white;
 }
 
-#Title, #HeadingWork, #SkillTitle, #Testimonials,#Contact,#Projects{
+#Title, #HeadingWork, #SkillTitle, #Testimonials,#Contact{
     scroll-margin-block-start: 140px;
 }

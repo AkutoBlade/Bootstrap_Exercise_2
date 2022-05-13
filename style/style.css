@@ -369,6 +369,10 @@ font-family: 'Share Tech', sans-serif;
    .carousel-inner{
        width:500px; 
    }
+
+   #Info{
+       margin-left: 20%;
+   }
     
 }
 
