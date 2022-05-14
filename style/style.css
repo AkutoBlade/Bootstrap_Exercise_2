@@ -557,3 +557,8 @@ text-shadow: 0vw 0vw 1vw white  ;
 .carousel-inner{
  height: 500px; 
 }
+
+#LandingBox{
+    overflow-y: hidden;
+    height: 170px;
+}

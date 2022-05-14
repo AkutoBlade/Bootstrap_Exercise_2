@@ -62,7 +62,7 @@
   <main style="min-height: 50vh">
     <div id="Box" class="lead d-flex justify-content-center align-items-center ">
       <section class="w-100">
-        <div class="text-center">
+        <div id="LandingBox" class="text-center">
           <h1 id="Jared" class="lead display-1 text-light" data-aos="fade-right" data-aos-duration="5000" data-aos-delay="500">Jared Isaacs
           </h1>
           <h1>
@@ -288,7 +288,9 @@
         </div>
       </div>
     </div>
-    <section style="height:200px; box-shadow: 0vw 0vw 1vw white;" class=" bg-dark"></section>
+    <section style="height:200px; box-shadow: 0vw 0vw 1vw white;" class=" bg-dark">
+      <div id="particular"></div>
+    </section>
     <!-- Testimonials -->
     <div id="Box6" class=" bg-dark vw-100" >
       <h2 id="Testimonials" class="text-center lead display-2 text-light">Testimionials</h2>
@@ -377,7 +379,14 @@
   <footer class="text-light">
    <p> &copy; 2022 All Rights Reserved</p>
    <p>Email: rared.isaacs@gmail.com</p>
-  </footer>            
+  </footer>
+  <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load("particular", "particles.json", function () {
+      console.log("callback - particles.js config loaded");
+    });
+  </script>            
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
