@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/2c7216ad35.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style/particles.css">
   <link rel="stylesheet" href="style/contact.css">
   <link rel="stylesheet" href="style/skills.css">
   <link rel="stylesheet" href="style/Project.css">
@@ -28,17 +29,17 @@
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-around" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse text-center justify-content-around" id="navbarNavAltMarkup">
           <div class="navbar-nav lead">
             <li class=""><a class="nav-link active p-5 bi bi-house-fill " href="#"> Home</a></li>
             <li id="pos-relative" class="nav-item dropdown ">
               <a class="nav-link active p-5 bi bi-file-person-fill" data-bs-toggle="dropdown" href="#"> About</a>
-              <ul id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#Title">About Me</a></li>
-                <li><a class="dropdown-item" href="#HeadingWork">Work And Education</a></li>
-                <li><a class="dropdown-item" href="#Projects">Projects</a></li>
-                <li><a class="dropdown-item" href="#SkillTitle">Skills</a></li>
-                <li><a class="dropdown-item" href="#Testimonials">Testimionials</a></li>
+              <ul id="dropdown-menu" class="dropdown-menu bg-dark text-center" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item text-light" href="#Title">About Me</a></li>
+                <li><a class="dropdown-item text-light" href="#HeadingWork">Work And Education</a></li>
+                <li><a class="dropdown-item text-light" href="#Projects">Projects</a></li>
+                <li><a class="dropdown-item text-light" href="#SkillTitle">Skills</a></li>
+                <li><a class="dropdown-item text-light" href="#Testimonials">Testimionials</a></li>
               </ul>
             </li>
             <li id="pos-relative" class="nav-item ">
@@ -59,8 +60,10 @@
     </div>
   </header>
   <!-- Landing Page -->
+  
   <main style="min-height: 50vh">
     <div id="Box" class="lead d-flex justify-content-center align-items-center ">
+      <div id="particles-js"></div>
       <section class="w-100">
         <div id="LandingBox" class="text-center">
           <h1 id="Jared" class="lead display-1 text-light" data-aos="fade-right" data-aos-duration="5000" data-aos-delay="500">Jared Isaacs
@@ -72,15 +75,13 @@
               <span class="wrap"></span>
             </a>
           </h1>
-          <div style="margin-top:5%;">
-            <a id="AboutButton" href="#Title">Find out more</a>
-          </div>
         </div>
     </div>
     <!-- About Me -->
     <section style="height:200px; box-shadow: 0vw 0vw 1vw white;" class=" bg-dark">
     </section>
     <div  id="Box2" class="container-fluid bg-dark d-flex align-items-center">
+      <div id="particles-js"></div>
       <div id="About" class="container my-5 bg-dark" data-aos="fade-right">
         <h2 id="Title" class="display-2 d-flex justify-content-center text-light" data-aos="zoom-out" data-aos-duration="4000"
         data-aos-delay="500">About</h2>
@@ -192,7 +193,7 @@
         <div class="carousel-inner ContainerImage pb-5">
           <div class="carousel-item active">
             <img src="image/Calculator.png" class=" img-fluid ProjectImage rounded-2" style="object-fit: cover ;" alt="...">
-            <div class="carousel-caption d-none d-md-block d-sm-block" style="z-index: 50;">
+            <div class="carousel-caption d-none d-md-block" style="z-index: 50;">
               <div class="Ctext">
               <h2 class="lead fw-normal Head  display-3">Calculator</h2>
               <h3 class="sub-heading">Made with: HTML5/CSS3</h3>
@@ -210,13 +211,13 @@
           </div>
           <div class="carousel-item">
             <img src="image/Rainbow.png" class="img-fluid ProjectImage rounded-2  " alt="...">
-            <div class="carousel-caption d-none d-md-block  d-sm-block" style="z-index:50;">
+            <div class="carousel-caption d-none d-md-block" style="z-index:50;">
               <div class="Ctext">
               <h2 class="lead fw-normal Head display-3">Rainbow</h2>
                <h3 class="sub-heading">Made with: HTML5/CSS3</h3>
               <p class="lead fs-2">Created for the purpose of experience</p>
               <div class="row">
-                <div class="col-2">
+                <div class="col-3">
                  <a type="button" href="https://singular-yeot-5dcc8a.netlify.app/" target="_blank" class="btn bg-black rounded-2 text-light">Live</a>
                 </div>
                 <div class="col-3">
@@ -234,7 +235,7 @@
               <h3 class="sub-heading">Made with: HTML5/CSS3</h3>
               <p class="lead fs-2">Created for the purpose of experience</p>
               <div class="row">
-                <div class="col-2">
+                <div class="col-3">
                  <a type="button" href="https://chipper-youtiao-e77086.netlify.app" target="_blank" style="object-fit: cover ;" class="btn bg-black rounded-2 text-light">Live</a>
                 </div>
                 <div class="col-3">
@@ -289,14 +290,13 @@
       </div>
     </div>
     <section style="height:200px; box-shadow: 0vw 0vw 1vw white;" class=" bg-dark">
-      <div id="particular"></div>
     </section>
     <!-- Testimonials -->
     <div id="Box6" class=" bg-dark vw-100" >
       <h2 id="Testimonials" class="text-center lead display-2 text-light">Testimionials</h2>
       <div id="wrapper" class=" ">
         <div class="row d-flex justify-content-around">
-          <div class="col-md-6 col-lg-3 col-sm-12">
+          <div id="Margin" class="col-md-6 col-lg-3 col-sm-12 gaps">
         <div class="containers">
           <div id="card">
             <div id="Front">
@@ -326,7 +326,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3 col-sm-12">
+      <div class="col-md-6 col-lg-3 col-sm-12 gaps">
         <div class="containers">
           <div id="card">
             <div id="Front">
@@ -341,7 +341,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3 col-sm-12">
+      <div class="col-md-6 col-lg-3 col-sm-12 gaps">
         <div class="containers g-5">
           <div id="card">
             <div id="Front">
@@ -361,7 +361,7 @@
     </div>
     <section style="height:200px; box-shadow: 0vw 0vw 1vw white;" class=" bg-dark"></section>
     <!--Contact -->
-    <div id="Box5" class="container-fluid bg-dark d-flex align-items-center flex-column" >
+    <div id="Box7" class="container-fluid bg-dark d-flex align-items-center flex-column" >
       <h2 id="Contact" class="section-heading display-2 text-light text-center">Contact Me</h2>
       <form action="https://formspree.io/f/xrgjrlaa" style="margin-top:7% ;" method="POST" id="contact-form">
         <input class="form-input" type="text" name="name" placeholder="Name">
